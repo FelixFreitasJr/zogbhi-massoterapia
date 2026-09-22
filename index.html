@@ -1,200 +1,416 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOGBHI Massoterapia &amp; Bem-Estar | Massoterapia com atendimento humanizado</title>
+    <meta name="description"
+        content="Massoterapia com atendimento personalizado em Massagem Relaxante, Terapêutica, Liberação Miofascial, Ventosaterapia, Reflexologia e Drenagem Linfática. Agende sua sessão.">
+    <meta name="theme-color" content="#1B3D2E">
 
-    <title>ZOGBHI Massoterapia & Bem-Estar</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="ZOGBHI Massoterapia & Bem-Estar">
+    <meta property="og:description"
+        content="Cuidado que começa pelo corpo. Massoterapia com atendimento personalizado para equilíbrio, relaxamento e qualidade de vida.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/hero.jpg">
 
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container navbar">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-            <div class="logo">
-                img/logo.png
-            </div>
+    <!-- ===================== HEADER ===================== -->
+    <header class="header" id="header">
+        <div class="header__inner container">
+            <a href="#topo" class="header__logo" aria-label="ZOGBHI Massoterapia — página inicial">
+                <img src="img/logo.png" alt="ZOGBHI Massoterapia &amp; Bem-Estar" width="180" height="52">
+            </a>
 
-            <nav>
-                <ul>
-                    <li>#inicioInício</a></li>
-                    <li>#servicosServiços</a></li>
-                    <li>#pacotesPacotes</a></li>
-                    <li>#contatoContato</a></li>
+            <button class="header__toggle" id="menuToggle" aria-expanded="false" aria-controls="menuPrincipal"
+                aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="header__nav" id="menuPrincipal">
+                <ul class="header__list">
+                    <li><a href="#topo" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#pacotes" class="nav-link">Pacotes</a></li>
+                    <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li><a href="#contato" class="nav-link nav-link--cta">Contato</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
-    <!-- HERO -->
-    <section id="inicio" class="hero">
+    <main id="conteudo">
 
-        <div class="hero-overlay">
-
-            <div class="container hero-content">
-
-                <h1>
-                    CUIDADO QUE COMEÇA<br>
-                    PELO CORPO
-                </h1>
-
-                <p>
-                    Massoterapia com atendimento personalizado
-                    para proporcionar bem-estar, equilíbrio
-                    e qualidade de vida.
-                </p>
-
-                #agendamento
-                    AGENDAR
-                </a>
-
+        <!-- ===================== HERO ===================== -->
+        <section class="hero" id="topo">
+            <img src="img/hero.jpg"
+                alt="Sala de massoterapia em tons verdes e areia, com luz quente e ambiente acolhedor" class="hero__bg"
+                fetchpriority="high">
+            <div class="hero__overlay"></div>
+            <div class="hero__content container">
+                <p class="hero__eyebrow">ZOGBHI Massoterapia &amp; Bem-Estar</p>
+                <h1 class="hero__title">Cuidado que começa<br>pelo corpo</h1>
+                <p class="hero__subtitle">Massoterapia com atendimento personalizado para promover equilíbrio,
+                    relaxamento e qualidade de vida.</p>
+                <div class="hero__actions">
+                    <a href="#contato" class="btn btn--primary">Agendar Agora</a>
+                    <a href="#servicos" class="btn btn--ghost">Conhecer Serviços</a>
+                </div>
             </div>
-
-        </div>
-
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-        <div class="container">
-
-            <h2>Sobre Othoniel</h2>
-
-            <div class="sobre-grid">
-
-                img/atendimento.jpg
-
-                <div>
-                    <p>
-                        Sou Othoniel, massoterapeuta dedicado ao
-                        cuidado integral do corpo e da mente.
-                    </p>
-
-                    <p>
-                        Meu objetivo é proporcionar uma experiência
-                        acolhedora e personalizada, promovendo alívio
-                        de tensões, relaxamento e bem-estar.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="section bg-light">
-        <div class="container">
-
-            <h2>Serviços</h2>
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>Massagem Relaxante</h3>
-                    <p>Redução do estresse e relaxamento muscular.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Massagem Terapêutica</h3>
-                    <p>Foco em dores e tensões específicas.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Liberação Miofascial</h3>
-                    <p>Melhora da mobilidade e recuperação muscular.</p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- PACOTES -->
-    <section id="pacotes" class="section">
-
-        <div class="container">
-
-            <h2>Pacotes</h2>
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>Sessão Individual</h3>
-                    <p>1 atendimento.</p>
-                </div>
-
-                <div class="card destaque">
-                    <h3>Pacote Mensal</h3>
-                    <p>4 sessões com valor especial.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Pacote Premium</h3>
-                    <p>8 sessões com acompanhamento.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- COMO FUNCIONA -->
-    <section class="section bg-light">
-
-        <div class="container">
-
-            <h2>Como Funciona</h2>
-
-            <div class="passos">
-
-                <div>1. Contato Inicial</div>
-                <div>2. Avaliação</div>
-                <div>3. Atendimento</div>
-                <div>4. Acompanhamento</div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- AGENDAMENTO -->
-    <section id="agendamento" class="section">
-
-        <div class="container">
-
-            <h2>Agendamento</h2>
-
-            <p>
-                Entre em contato pelo WhatsApp para verificar horários disponíveis.
-            </p>
-
-            https://wa.me/55SEUNUMERO
-                Agendar pelo WhatsApp
+            <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+                <span></span>
             </a>
+        </section>
 
+        <!-- ===================== SOBRE ===================== -->
+        <section class="sobre" id="sobre">
+            <div class="container sobre__grid">
+                <div class="sobre__media reveal">
+                    <img src="img/sobre.jpg"
+                        alt="Othoniel, terapeuta responsável pela ZOGBHI Massoterapia, em ambiente acolhedor"
+                        loading="lazy" width="900" height="1200">
+                </div>
+                <div class="sobre__texto reveal">
+                    <p class="section-kicker">Sobre a ZOGBHI</p>
+                    <h2>Conduzido por Othoniel, dedicado ao seu equilíbrio</h2>
+                    <p>Há anos dedicado à massoterapia, Othoniel construiu a ZOGBHI a partir de uma convicção simples:
+                        cuidar do corpo é cuidar de quem se é. Cada sessão é pensada de forma individual, unindo técnica
+                        apurada, escuta atenta e um ambiente pensado para o descanso.</p>
+                    <p>Mais do que uma sessão de massagem, a ZOGBHI propõe um espaço de pausa — onde o tempo desacelera
+                        e o corpo volta a ser prioridade.</p>
+
+                    <div class="sobre__pilares">
+                        <div class="pilar">
+                            <h3>Missão</h3>
+                            <p>Promover bem-estar físico e emocional por meio de um atendimento humanizado e
+                                tecnicamente qualificado.</p>
+                        </div>
+                        <div class="pilar">
+                            <h3>Visão</h3>
+                            <p>Ser reconhecida como referência em massoterapia premium, unindo cuidado genuíno e
+                                ambiente sofisticado.</p>
+                        </div>
+                        <div class="pilar">
+                            <h3>Valores</h3>
+                            <p>Empatia, ética, presença e respeito ao tempo e ao corpo de cada pessoa atendida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SERVIÇOS ===================== -->
+        <section class="servicos" id="servicos">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-kicker">O que oferecemos</p>
+                    <h2>Serviços pensados para cada necessidade</h2>
+                    <p class="section-lead">Técnicas selecionadas para aliviar tensões, restaurar a circulação e
+                        devolver a sensação de leveza ao corpo.</p>
+                </div>
+
+                <div class="cards-grid">
+
+                    <article class="card-servico reveal">
+                        <div class="card-servico__img">
+                            <img src="img/servico-relaxante.jpg" alt="Ambiente preparado para massagem relaxante"
+                                loading="lazy" width="800" height="800">
+                        </div>
+                        <div class="card-servico__body">
+                            <span class="card-servico__icon" aria-hidden="true">✦</span>
+                            <h3>Massagem Relaxante</h3>
+                            <p>Movimentos suaves e ritmados que reduzem o estresse e devolvem a sensação de leveza ao
+                                corpo e à mente.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-servico reveal">
+                        <div class="card-servico__img">
+                            <img src="img/servico-terapeutica.jpg" alt="Ambiente preparado para massagem terapêutica"
+                                loading="lazy" width="800" height="800">
+                        </div>
+                        <div class="card-servico__body">
+                            <span class="card-servico__icon" aria-hidden="true">✦</span>
+                            <h3>Massagem Terapêutica</h3>
+                            <p>Técnica direcionada ao alívio de dores e tensões musculares específicas, com pressão
+                                ajustada a cada corpo.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-servico reveal">
+                        <div class="card-servico__img">
+                            <img src="img/servico-miofascial.jpg" alt="Ambiente preparado para liberação miofascial"
+                                loading="lazy" width="800" height="800">
+                        </div>
+                        <div class="card-servico__body">
+                            <span class="card-servico__icon" aria-hidden="true">✦</span>
+                            <h3>Liberação Miofascial</h3>
+                            <p>Trabalho profundo sobre a fáscia muscular, restaurando mobilidade e aliviando pontos de
+                                tensão crônica.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-servico reveal">
+                        <div class="card-servico__img">
+                            <img src="img/ambiente.jpg"
+                                alt="Detalhe do ambiente da clínica preparado para ventosaterapia" loading="lazy"
+                                width="800" height="800">
+                        </div>
+                        <div class="card-servico__body">
+                            <span class="card-servico__icon" aria-hidden="true">✦</span>
+                            <h3>Ventosaterapia</h3>
+                            <p>Uso de ventosas para estimular a circulação sanguínea e promover a soltura muscular em
+                                regiões específicas.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-servico reveal">
+                        <div class="card-servico__img">
+                            <img src="img/atendimento.jpg" alt="Ambiente preparado para reflexologia" loading="lazy"
+                                width="800" height="800">
+                        </div>
+                        <div class="card-servico__body">
+                            <span class="card-servico__icon" aria-hidden="true">✦</span>
+                            <h3>Reflexologia</h3>
+                            <p>Estímulo de pontos reflexos nos pés, atuando no equilíbrio geral do organismo e no
+                                relaxamento profundo.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-servico reveal">
+                        <div class="card-servico__img">
+                            <img src="img/servico-relaxante.jpg" alt="Ambiente preparado para drenagem linfática"
+                                loading="lazy" width="800" height="800">
+                        </div>
+                        <div class="card-servico__body">
+                            <span class="card-servico__icon" aria-hidden="true">✦</span>
+                            <h3>Drenagem Linfática</h3>
+                            <p>Manobras suaves que estimulam o sistema linfático, reduzindo retenção de líquidos e
+                                sensação de peso no corpo.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PACOTES ===================== -->
+        <section class="pacotes" id="pacotes">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-kicker">Investimento</p>
+                    <h2>Pacotes para o seu ritmo de cuidado</h2>
+                    <p class="section-lead">Escolha a frequência que melhor acompanha a sua rotina de bem-estar.</p>
+                </div>
+
+                <div class="pacotes-grid">
+
+                    <div class="card-pacote reveal">
+                        <h3>Sessão Avulsa</h3>
+                        <p class="card-pacote__desc">Ideal para experimentar a ZOGBHI ou para quem busca um cuidado
+                            pontual.</p>
+                        <ul class="card-pacote__lista">
+                            <li>1 sessão de 60 minutos</li>
+                            <li>Técnica escolhida no dia</li>
+                            <li>Ambiente climatizado e privativo</li>
+                        </ul>
+                        <a href="#contato" class="btn btn--outline">Agendar sessão</a>
+                    </div>
+
+                    <div class="card-pacote card-pacote--destaque reveal">
+                        <span class="card-pacote__badge">Mais escolhido</span>
+                        <h3>Pacote Bem-Estar Premium</h3>
+                        <p class="card-pacote__desc">Para quem deseja fazer do autocuidado um hábito, com acompanhamento
+                            contínuo.</p>
+                        <ul class="card-pacote__lista">
+                            <li>8 sessões de 60 minutos</li>
+                            <li>Avaliação e replanejamento a cada 4 sessões</li>
+                            <li>Prioridade na agenda</li>
+                            <li>Condição especial de investimento</li>
+                        </ul>
+                        <a href="#contato" class="btn btn--primary">Quero este pacote</a>
+                    </div>
+
+                    <div class="card-pacote reveal">
+                        <h3>Pacote Equilíbrio</h3>
+                        <p class="card-pacote__desc">Uma sequência de sessões para estabelecer uma rotina consistente de
+                            cuidado.</p>
+                        <ul class="card-pacote__lista">
+                            <li>4 sessões de 60 minutos</li>
+                            <li>Avaliação inicial incluída</li>
+                            <li>Flexibilidade de agendamento</li>
+                        </ul>
+                        <a href="#contato" class="btn btn--outline">Agendar pacote</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== COMO FUNCIONA ===================== -->
+        <section class="como-funciona" id="como-funciona">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-kicker">O caminho até você</p>
+                    <h2>Como funciona o atendimento</h2>
+                </div>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <span class="timeline__numero">1</span>
+                        <span class="timeline__icone" aria-hidden="true">✆</span>
+                        <h3>Contato</h3>
+                        <p>Você entra em contato pelo WhatsApp e conta um pouco sobre o que sente e o que busca.</p>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__numero">2</span>
+                        <span class="timeline__icone" aria-hidden="true">◎</span>
+                        <h3>Avaliação</h3>
+                        <p>Uma breve avaliação identifica tensões, histórico e objetivos para indicar a técnica mais
+                            adequada.</p>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__numero">3</span>
+                        <span class="timeline__icone" aria-hidden="true">❁</span>
+                        <h3>Atendimento</h3>
+                        <p>A sessão acontece em ambiente privativo, no seu tempo, com atenção total ao seu conforto.</p>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__numero">4</span>
+                        <span class="timeline__icone" aria-hidden="true">↻</span>
+                        <h3>Acompanhamento</h3>
+                        <p>Orientações pós-sessão e acompanhamento da evolução para manter os resultados no dia a dia.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===================== BENEFÍCIOS ===================== -->
+        <section class="beneficios">
+            <div class="container beneficios__grid">
+                <div class="beneficios__texto reveal">
+                    <p class="section-kicker">Por que cuidar do corpo</p>
+                    <h2>Benefícios que vão além do relaxamento</h2>
+                    <p>Cada sessão é construída para gerar efeitos que permanecem muito depois de você sair da maca.</p>
+                </div>
+                <ul class="beneficios__lista reveal">
+                    <li><span class="check" aria-hidden="true">✓</span> Redução do estresse</li>
+                    <li><span class="check" aria-hidden="true">✓</span> Alívio de dores musculares</li>
+                    <li><span class="check" aria-hidden="true">✓</span> Melhora da circulação</li>
+                    <li><span class="check" aria-hidden="true">✓</span> Relaxamento profundo</li>
+                    <li><span class="check" aria-hidden="true">✓</span> Qualidade de vida</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===================== DEPOIMENTOS ===================== -->
+        <section class="depoimentos" id="depoimentos">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-kicker">Quem já passou por aqui</p>
+                    <h2>Histórias de quem escolheu se cuidar</h2>
+                </div>
+
+                <div class="slider" id="slider" aria-roledescription="carrossel" aria-label="Depoimentos de clientes">
+                    <div class="slider__track" id="sliderTrack">
+
+                        <blockquote class="slide" aria-hidden="false">
+                            <p>“Cheguei tensa depois de uma semana difícil e saí com uma sensação de leveza que não
+                                sentia há meses. O cuidado com cada detalhe faz toda a diferença.”</p>
+                            <footer>— Camila R., Pacote Bem-Estar Premium</footer>
+                        </blockquote>
+
+                        <blockquote class="slide" aria-hidden="true">
+                            <p>“A liberação miofascial resolveu uma dor no ombro que eu carregava há anos. Atendimento
+                                atencioso do início ao fim.”</p>
+                            <footer>— Marcos A., Massagem Terapêutica</footer>
+                        </blockquote>
+
+                        <blockquote class="slide" aria-hidden="true">
+                            <p>“O ambiente já é um convite ao relaxamento. Virou parte fixa da minha rotina de
+                                autocuidado a cada quinze dias.”</p>
+                            <footer>— Renata S., Pacote Equilíbrio</footer>
+                        </blockquote>
+
+                    </div>
+
+                    <div class="slider__controls">
+                        <button class="slider__seta" id="sliderPrev" aria-label="Depoimento anterior">‹</button>
+                        <div class="slider__dots" id="sliderDots"></div>
+                        <button class="slider__seta" id="sliderNext" aria-label="Próximo depoimento">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CTA FINAL ===================== -->
+        <section class="cta-final">
+            <div class="container cta-final__inner reveal">
+                <h2>Seu bem-estar merece atenção.</h2>
+                <a href="https://wa.me/5521979885255?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20na%20ZOGBHI."
+                    class="btn btn--areia" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" id="contato">
+        <div class="container footer__grid">
+            <div class="footer__marca">
+                <img src="img/logo.png" alt="ZOGBHI Massoterapia &amp; Bem-Estar" width="160" height="46"
+                    loading="lazy">
+                <p>Massoterapia com atendimento humanizado para o seu equilíbrio.</p>
+            </div>
+
+            <div class="footer__contato">
+                <h3>Contato</h3>
+                <p><a href="https://wa.me/5521979885255" target="_blank" rel="noopener">WhatsApp (00) 00000-0000</a></p>
+                <p><a href="mailto:contato@zogbhi.com.br">contato@zogbhi.com.br</a></p>
+                <p>Atendimento com hora marcada</p>
+            </div>
+
+            <div class="footer__social">
+                <h3>Redes</h3>
+                <p><a href="https://wa.me/5521979885255" target="_blank" rel="noopener">WhatsApp</a></p>
+                <p><a href="https://instagram.com/zogbhi" target="_blank" rel="noopener">Instagram</a></p>
+                <p><a href="https://facebook.com/zogbhi" target="_blank" rel="noopener">Facebook</a></p>
+            </div>
         </div>
 
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="contato">
-
-        <div class="container">
-
-            <p>© 2025 ZOGBHI Massoterapia & Bem-Estar</p>
-
+        <div class="footer__base container">
+            <p>&copy; <span id="ano"></span> ZOGBHI Massoterapia &amp; Bem-Estar. Todos os direitos reservados.</p>
         </div>
-
     </footer>
 
+    <!-- Botão WhatsApp flutuante -->
+    <a href="https://wa.me/5521979885255?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20na%20ZOGBHI."
+        class="whatsapp-flutuante" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+                d="M16.02 3C9.4 3 4 8.37 4 15c0 2.36.68 4.55 1.86 6.4L4 29l7.8-1.8A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.63 28 15S22.63 3 16.02 3Zm0 21.7c-1.98 0-3.83-.55-5.4-1.5l-.39-.23-4.63 1.07 1.1-4.5-.25-.4A9.6 9.6 0 0 1 5.4 15c0-5.86 4.77-10.6 10.62-10.6 5.86 0 10.62 4.74 10.62 10.6 0 5.86-4.76 10.7-10.62 10.7Zm5.79-7.94c-.32-.16-1.87-.92-2.16-1.02-.29-.11-.5-.16-.71.16-.21.32-.82 1.02-1 1.23-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.76-2.19-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.11-.21.05-.4-.02-.56-.08-.16-.71-1.7-.97-2.33-.26-.6-.52-.53-.71-.54h-.6c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64 0 1.56 1.14 3.06 1.3 3.27.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.87-.76 2.13-1.5.26-.74.26-1.37.19-1.5-.08-.14-.29-.21-.61-.37Z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js" defer></script>
 </body>
+
 </html>
